@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C15D421B1958F8DF00F78FC6 /* MeetingRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = C15D421A1958F8DF00F78FC6 /* MeetingRoom.m */; };
+		C15D421E1959049900F78FC6 /* PhoneBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C15D421D1959049900F78FC6 /* PhoneBook.m */; };
+		C19DD3791925084F007580ED /* DataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DD3741925084F007580ED /* DataSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C19DD37A1925084F007580ED /* WebServiceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DD3761925084F007580ED /* WebServiceHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C19DD37B1925084F007580ED /* XMLDataSetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DD3781925084F007580ED /* XMLDataSetParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C19DD37E1925086C007580ED /* CacheDBCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DD37D1925086C007580ED /* CacheDBCommands.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C1B0CAB61915204E00E72A1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B0CAB51915204E00E72A1B /* Foundation.framework */; };
+		C1B0CAB81915204E00E72A1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B0CAB71915204E00E72A1B /* CoreGraphics.framework */; };
+		C1B0CABA1915204E00E72A1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B0CAB91915204E00E72A1B /* UIKit.framework */; };
+		C1B0CAC01915204E00E72A1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1B0CABE1915204E00E72A1B /* InfoPlist.strings */; };
+		C1B0CAC21915204E00E72A1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B0CAC11915204E00E72A1B /* main.m */; };
+		C1B0CAC61915204E00E72A1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B0CAC51915204E00E72A1B /* AppDelegate.m */; };
+		C1B0CAC91915204E00E72A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B0CAC71915204E00E72A1B /* Main.storyboard */; };
+		C1B0CACC1915204E00E72A1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B0CACB1915204E00E72A1B /* ViewController.m */; };
+		C1B0CACE1915204E00E72A1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B0CACD1915204E00E72A1B /* Images.xcassets */; };
+		C1B0CAD51915204E00E72A1B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B0CAD41915204E00E72A1B /* XCTest.framework */; };
+		C1B0CAD61915204E00E72A1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B0CAB51915204E00E72A1B /* Foundation.framework */; };
+		C1B0CAD71915204E00E72A1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B0CAB91915204E00E72A1B /* UIKit.framework */; };
+		C1B0CADF1915204E00E72A1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1B0CADD1915204E00E72A1B /* InfoPlist.strings */; };
+		C1B0CAE11915204E00E72A1B /* RoomDisplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B0CAE01915204E00E72A1B /* RoomDisplayTests.m */; };
+		C1CDA969196944620096122E /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CDA968196944620096122E /* CKCalendarView.m */; };
+		C1CDA96F196944AB0096122E /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CDA96B196944AB0096122E /* left_arrow.png */; };
+		C1CDA970196944AB0096122E /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CDA96C196944AB0096122E /* left_arrow@2x.png */; };
+		C1CDA971196944AB0096122E /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CDA96D196944AB0096122E /* right_arrow.png */; };
+		C1CDA972196944AB0096122E /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CDA96E196944AB0096122E /* right_arrow@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1B0CAD81915204E00E72A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1B0CAAA1915204E00E72A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1B0CAB11915204E00E72A1B;
+			remoteInfo = RoomDisplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C15D42191958F8DF00F78FC6 /* MeetingRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingRoom.h; sourceTree = "<group>"; };
+		C15D421A1958F8DF00F78FC6 /* MeetingRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingRoom.m; sourceTree = "<group>"; };
+		C15D421C1959049900F78FC6 /* PhoneBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneBook.h; sourceTree = "<group>"; };
+		C15D421D1959049900F78FC6 /* PhoneBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneBook.m; sourceTree = "<group>"; };
+		C19DD3731925084F007580ED /* DataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSet.h; sourceTree = "<group>"; };
+		C19DD3741925084F007580ED /* DataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSet.m; sourceTree = "<group>"; };
+		C19DD3751925084F007580ED /* WebServiceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceHelper.h; sourceTree = "<group>"; };
+		C19DD3761925084F007580ED /* WebServiceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceHelper.m; sourceTree = "<group>"; };
+		C19DD3771925084F007580ED /* XMLDataSetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDataSetParser.h; sourceTree = "<group>"; };
+		C19DD3781925084F007580ED /* XMLDataSetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDataSetParser.m; sourceTree = "<group>"; };
+		C19DD37C1925086C007580ED /* CacheDBCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheDBCommands.h; sourceTree = "<group>"; };
+		C19DD37D1925086C007580ED /* CacheDBCommands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheDBCommands.m; sourceTree = "<group>"; };
+		C1B0CAB21915204E00E72A1B /* RoomDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B0CAB51915204E00E72A1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1B0CAB71915204E00E72A1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C1B0CAB91915204E00E72A1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C1B0CABD1915204E00E72A1B /* RoomDisplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoomDisplay-Info.plist"; sourceTree = "<group>"; };
+		C1B0CABF1915204E00E72A1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1B0CAC11915204E00E72A1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1B0CAC31915204E00E72A1B /* RoomDisplay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoomDisplay-Prefix.pch"; sourceTree = "<group>"; };
+		C1B0CAC41915204E00E72A1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1B0CAC51915204E00E72A1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1B0CAC81915204E00E72A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1B0CACA1915204E00E72A1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C1B0CACB1915204E00E72A1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C1B0CACD1915204E00E72A1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C1B0CAD31915204E00E72A1B /* RoomDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B0CAD41915204E00E72A1B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C1B0CADC1915204E00E72A1B /* RoomDisplayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoomDisplayTests-Info.plist"; sourceTree = "<group>"; };
+		C1B0CADE1915204E00E72A1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1B0CAE01915204E00E72A1B /* RoomDisplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomDisplayTests.m; sourceTree = "<group>"; };
+		C1CDA967196944620096122E /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKCalendarView.h; path = Calendar/CKCalendarView.h; sourceTree = "<group>"; };
+		C1CDA968196944620096122E /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKCalendarView.m; path = Calendar/CKCalendarView.m; sourceTree = "<group>"; };
+		C1CDA96B196944AB0096122E /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left_arrow.png; path = Calendar/resources/left_arrow.png; sourceTree = "<group>"; };
+		C1CDA96C196944AB0096122E /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left_arrow@2x.png"; path = "Calendar/resources/left_arrow@2x.png"; sourceTree = "<group>"; };
+		C1CDA96D196944AB0096122E /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right_arrow.png; path = Calendar/resources/right_arrow.png; sourceTree = "<group>"; };
+		C1CDA96E196944AB0096122E /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right_arrow@2x.png"; path = "Calendar/resources/right_arrow@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1B0CAAF1915204E00E72A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B0CAB81915204E00E72A1B /* CoreGraphics.framework in Frameworks */,
+				C1B0CABA1915204E00E72A1B /* UIKit.framework in Frameworks */,
+				C1B0CAB61915204E00E72A1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B0CAD01915204E00E72A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B0CAD51915204E00E72A1B /* XCTest.framework in Frameworks */,
+				C1B0CAD71915204E00E72A1B /* UIKit.framework in Frameworks */,
+				C1B0CAD61915204E00E72A1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C19DD3721925084F007580ED /* NETDataset */ = {
+			isa = PBXGroup;
+			children = (
+				C19DD3731925084F007580ED /* DataSet.h */,
+				C19DD3741925084F007580ED /* DataSet.m */,
+				C19DD3751925084F007580ED /* WebServiceHelper.h */,
+				C19DD3761925084F007580ED /* WebServiceHelper.m */,
+				C19DD3771925084F007580ED /* XMLDataSetParser.h */,
+				C19DD3781925084F007580ED /* XMLDataSetParser.m */,
+			);
+			path = NETDataset;
+			sourceTree = "<group>";
+		};
+		C1B0CAA91915204E00E72A1B = {
+			isa = PBXGroup;
+			children = (
+				C1CDA9661969441D0096122E /* Calendar */,
+				C19DD3721925084F007580ED /* NETDataset */,
+				C1B0CABB1915204E00E72A1B /* RoomDisplay */,
+				C1B0CADA1915204E00E72A1B /* RoomDisplayTests */,
+				C1B0CAB41915204E00E72A1B /* Frameworks */,
+				C1B0CAB31915204E00E72A1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1B0CAB31915204E00E72A1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1B0CAB21915204E00E72A1B /* RoomDisplay.app */,
+				C1B0CAD31915204E00E72A1B /* RoomDisplayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1B0CAB41915204E00E72A1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1B0CAB51915204E00E72A1B /* Foundation.framework */,
+				C1B0CAB71915204E00E72A1B /* CoreGraphics.framework */,
+				C1B0CAB91915204E00E72A1B /* UIKit.framework */,
+				C1B0CAD41915204E00E72A1B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1B0CABB1915204E00E72A1B /* RoomDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				C19DD37C1925086C007580ED /* CacheDBCommands.h */,
+				C19DD37D1925086C007580ED /* CacheDBCommands.m */,
+				C15D421C1959049900F78FC6 /* PhoneBook.h */,
+				C15D421D1959049900F78FC6 /* PhoneBook.m */,
+				C15D42191958F8DF00F78FC6 /* MeetingRoom.h */,
+				C15D421A1958F8DF00F78FC6 /* MeetingRoom.m */,
+				C1B0CAC41915204E00E72A1B /* AppDelegate.h */,
+				C1B0CAC51915204E00E72A1B /* AppDelegate.m */,
+				C1B0CAC71915204E00E72A1B /* Main.storyboard */,
+				C1B0CACA1915204E00E72A1B /* ViewController.h */,
+				C1B0CACB1915204E00E72A1B /* ViewController.m */,
+				C1B0CACD1915204E00E72A1B /* Images.xcassets */,
+				C1B0CABC1915204E00E72A1B /* Supporting Files */,
+			);
+			path = RoomDisplay;
+			sourceTree = "<group>";
+		};
+		C1B0CABC1915204E00E72A1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1B0CABD1915204E00E72A1B /* RoomDisplay-Info.plist */,
+				C1B0CABE1915204E00E72A1B /* InfoPlist.strings */,
+				C1B0CAC11915204E00E72A1B /* main.m */,
+				C1B0CAC31915204E00E72A1B /* RoomDisplay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1B0CADA1915204E00E72A1B /* RoomDisplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1B0CAE01915204E00E72A1B /* RoomDisplayTests.m */,
+				C1B0CADB1915204E00E72A1B /* Supporting Files */,
+			);
+			path = RoomDisplayTests;
+			sourceTree = "<group>";
+		};
+		C1B0CADB1915204E00E72A1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1B0CADC1915204E00E72A1B /* RoomDisplayTests-Info.plist */,
+				C1B0CADD1915204E00E72A1B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1CDA9661969441D0096122E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				C1CDA967196944620096122E /* CKCalendarView.h */,
+				C1CDA968196944620096122E /* CKCalendarView.m */,
+				C1CDA96A1969447E0096122E /* resources */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		C1CDA96A1969447E0096122E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1CDA96B196944AB0096122E /* left_arrow.png */,
+				C1CDA96C196944AB0096122E /* left_arrow@2x.png */,
+				C1CDA96D196944AB0096122E /* right_arrow.png */,
+				C1CDA96E196944AB0096122E /* right_arrow@2x.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1B0CAB11915204E00E72A1B /* RoomDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B0CAE41915204E00E72A1B /* Build configuration list for PBXNativeTarget "RoomDisplay" */;
+			buildPhases = (
+				C1B0CAAE1915204E00E72A1B /* Sources */,
+				C1B0CAAF1915204E00E72A1B /* Frameworks */,
+				C1B0CAB01915204E00E72A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoomDisplay;
+			productName = RoomDisplay;
+			productReference = C1B0CAB21915204E00E72A1B /* RoomDisplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1B0CAD21915204E00E72A1B /* RoomDisplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B0CAE71915204E00E72A1B /* Build configuration list for PBXNativeTarget "RoomDisplayTests" */;
+			buildPhases = (
+				C1B0CACF1915204E00E72A1B /* Sources */,
+				C1B0CAD01915204E00E72A1B /* Frameworks */,
+				C1B0CAD11915204E00E72A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1B0CAD91915204E00E72A1B /* PBXTargetDependency */,
+			);
+			name = RoomDisplayTests;
+			productName = RoomDisplayTests;
+			productReference = C1B0CAD31915204E00E72A1B /* RoomDisplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1B0CAAA1915204E00E72A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = MyProject;
+				TargetAttributes = {
+					C1B0CAB11915204E00E72A1B = {
+						DevelopmentTeam = MGGN7U5D7N;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					C1B0CAD21915204E00E72A1B = {
+						TestTargetID = C1B0CAB11915204E00E72A1B;
+					};
+				};
+			};
+			buildConfigurationList = C1B0CAAD1915204E00E72A1B /* Build configuration list for PBXProject "RoomDisplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1B0CAA91915204E00E72A1B;
+			productRefGroup = C1B0CAB31915204E00E72A1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1B0CAB11915204E00E72A1B /* RoomDisplay */,
+				C1B0CAD21915204E00E72A1B /* RoomDisplayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1B0CAB01915204E00E72A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CDA970196944AB0096122E /* left_arrow@2x.png in Resources */,
+				C1B0CACE1915204E00E72A1B /* Images.xcassets in Resources */,
+				C1CDA972196944AB0096122E /* right_arrow@2x.png in Resources */,
+				C1CDA971196944AB0096122E /* right_arrow.png in Resources */,
+				C1B0CAC01915204E00E72A1B /* InfoPlist.strings in Resources */,
+				C1CDA96F196944AB0096122E /* left_arrow.png in Resources */,
+				C1B0CAC91915204E00E72A1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B0CAD11915204E00E72A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B0CADF1915204E00E72A1B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1B0CAAE1915204E00E72A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CDA969196944620096122E /* CKCalendarView.m in Sources */,
+				C1B0CACC1915204E00E72A1B /* ViewController.m in Sources */,
+				C19DD37B1925084F007580ED /* XMLDataSetParser.m in Sources */,
+				C1B0CAC61915204E00E72A1B /* AppDelegate.m in Sources */,
+				C19DD3791925084F007580ED /* DataSet.m in Sources */,
+				C19DD37A1925084F007580ED /* WebServiceHelper.m in Sources */,
+				C1B0CAC21915204E00E72A1B /* main.m in Sources */,
+				C15D421B1958F8DF00F78FC6 /* MeetingRoom.m in Sources */,
+				C15D421E1959049900F78FC6 /* PhoneBook.m in Sources */,
+				C19DD37E1925086C007580ED /* CacheDBCommands.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B0CACF1915204E00E72A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B0CAE11915204E00E72A1B /* RoomDisplayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1B0CAD91915204E00E72A1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1B0CAB11915204E00E72A1B /* RoomDisplay */;
+			targetProxy = C1B0CAD81915204E00E72A1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1B0CABE1915204E00E72A1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B0CABF1915204E00E72A1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C1B0CAC71915204E00E72A1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B0CAC81915204E00E72A1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1B0CADD1915204E00E72A1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B0CADE1915204E00E72A1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1B0CAE21915204E00E72A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C1B0CAE31915204E00E72A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1B0CAE51915204E00E72A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoomDisplay/RoomDisplay-Prefix.pch";
+				INFOPLIST_FILE = "RoomDisplay/RoomDisplay-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banpu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C1B0CAE61915204E00E72A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoomDisplay/RoomDisplay-Prefix.pch";
+				INFOPLIST_FILE = "RoomDisplay/RoomDisplay-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banpu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C1B0CAE81915204E00E72A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoomDisplay.app/RoomDisplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoomDisplay/RoomDisplay-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RoomDisplayTests/RoomDisplayTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banpu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C1B0CAE91915204E00E72A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoomDisplay.app/RoomDisplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoomDisplay/RoomDisplay-Prefix.pch";
+				INFOPLIST_FILE = "RoomDisplayTests/RoomDisplayTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banpu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1B0CAAD1915204E00E72A1B /* Build configuration list for PBXProject "RoomDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B0CAE21915204E00E72A1B /* Debug */,
+				C1B0CAE31915204E00E72A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B0CAE41915204E00E72A1B /* Build configuration list for PBXNativeTarget "RoomDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B0CAE51915204E00E72A1B /* Debug */,
+				C1B0CAE61915204E00E72A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B0CAE71915204E00E72A1B /* Build configuration list for PBXNativeTarget "RoomDisplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B0CAE81915204E00E72A1B /* Debug */,
+				C1B0CAE91915204E00E72A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1B0CAAA1915204E00E72A1B /* Project object */;
+}
