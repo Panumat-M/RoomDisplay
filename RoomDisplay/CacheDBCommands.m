@@ -26,8 +26,8 @@
 {
 	
 	self.XMLNamespace = @"http://BPuri.com/"; //this must match what is in your .net web service code
-	//self.ServerURL = @"http://192.168.1.170/BPWebService/ResService.asmx";    // Server at home
-    self.ServerURL = @"http://10.2.0.6/BPWebService/ResService.asmx";       // Server at office
+	self.ServerURL = @"http://192.168.1.170/BPWebService/ResService.asmx";    // Server at home
+    //self.ServerURL = @"http://10.2.0.6/BPWebService/ResService.asmx";       // Server at office
     
 	DataSet *tmp = [[DataSet alloc] init];
 	self.myDataset = tmp;
@@ -64,8 +64,8 @@
     DataCon.XMLURLAddress = self.ServerURL;
     
     //set up method and parameters
-    //DataCon.MethodName = @"GetResPerson";
-    DataCon.MethodName = @"GetResPersonTab";
+    DataCon.MethodName = @"GetResPerson";
+    //DataCon.MethodName = @"GetResPersonTab";
     
     DataCon.MethodParameters = [[NSMutableDictionary alloc] init];
     [DataCon.MethodParameters setObject:param1 forKey:@"resPerson"];
@@ -102,8 +102,8 @@
     DataCon.XMLURLAddress = self.ServerURL;
     
     //set up method and parameters
-    //DataCon.MethodName = @"GetResSched";
-    DataCon.MethodName = @"GetResSchedTab";
+    DataCon.MethodName = @"GetResSched";
+    //DataCon.MethodName = @"GetResSchedTab";
     
     DataCon.MethodParameters = [[NSMutableDictionary alloc] init];
     [DataCon.MethodParameters setObject:param1 forKey:@"resRoom"];
